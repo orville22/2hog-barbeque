@@ -1,0 +1,15 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin drop-shadow {
+    box-shadow: 0 .5rem 2rem rgba($color-black, $alpha: 0.2);
+}
+
+@mixin drop-shadow-up {
+    box-shadow: 0 .5rem rem rgba($color-black, $alpha: 0.1);
+}

@@ -1,0 +1,735 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem; }
+
+li {
+  list-style: none; }
+
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+section {
+  margin-bottom: 12rem;
+  padding-top: 6rem; }
+
+.heading__primary {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center; }
+
+.heading__secondary {
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-med {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-dotted-line {
+  display: block;
+  margin: 0 auto;
+  line-height: 7rem;
+  width: 80%;
+  border-bottom: 4px dotted #583c3c; }
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1) translateY(0); }
+  5% {
+    transform: scale(0.9) translateY(0.2rem); }
+  30% {
+    transform: scale(1.6) translateY(-0.5rem); }
+  60% {
+    transform: scale(1.6) translateY(-0.5rem); }
+  75% {
+    transform: scale(1.8) translateY(-0.5rem); }
+  100% {
+    transform: scale(1) translateY(0); } }
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-80%); }
+  100% {
+    transform: translate(0%); } }
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-80%); }
+  50% {
+    transform: translateX(0); }
+  100% {
+    transform: translate(-80%); } }
+
+@keyframes fadeToBlack {
+  0% {
+    background-image: linear-gradient(to top right, rgba(1, 57, 18, 0.01), rgba(161, 13, 2, 0.01)), url(/assets/images/gallery/bbq/bbq-orders.jpeg); }
+  100% {
+    background-image: linear-gradient(to top right, rgba(1, 57, 18, 0.9), rgba(121, 72, 4, 0.8)), url(/assets/images/gallery/bbq/bbq-orders.jpeg);
+    background-blend-mode: multiply; } }
+
+@keyframes appearDisappear {
+  0% {
+    transform: rotateX(0);
+    opacity: 1; }
+  100% {
+    transform: rotateX(90deg);
+    opacity: 0; } }
+
+.section__menu {
+  padding: 6rem;
+  background-color: #f6f4f1;
+  color: #583c3c;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+
+.category {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: left;
+  position: relative; }
+  .category::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    top: 100%;
+    left: 25%;
+    position: absolute;
+    border-bottom: 2px dotted #583c3c; }
+  .category__title {
+    text-align: left;
+    margin-bottom: 2rem; }
+    .category__title--icon {
+      display: inline-block;
+      margin: 0 1.5rem;
+      animation: zoomInOut 1.5s 2s; }
+    .category__title--text {
+      animation: moveInBottom .5s 1s ease-out;
+      animation-fill-mode: backwards; }
+    .category__title--subtitle {
+      font-weight: 100;
+      max-width: 70rem; }
+  .category__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  padding: 1.5rem;
+  margin: 1.2rem;
+  background-color: rgba(246, 244, 241, 0.5);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all .3s ease-in-out; }
+  .menu-item:hover {
+    transform: scale(1.7) rotate(-3deg); }
+  .menu-item__image {
+    height: 12rem;
+    width: 12rem;
+    margin-bottom: 1rem;
+    border-radius: 50%; }
+  .menu-item__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+    width: 12rem; }
+    .menu-item__text--name {
+      font-weight: 300;
+      margin-right: 1rem; }
+    .menu-item__text--price {
+      font-weight: 700; }
+
+.section-gallery {
+  background-color: #e5f5e4;
+  color: #545353;
+  overflow: hidden; }
+  .section-gallery .heading__subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 100; }
+
+.gallery-row {
+  display: flex;
+  width: 600%;
+  overflow: scroll; }
+  .gallery-row--1 {
+    animation: scrollLeft 200s infinite; }
+  .gallery-row--2 {
+    animation: scrollRight 200s infinite; }
+  .gallery-row .image-container {
+    display: block;
+    margin-bottom: 2.5rem; }
+    .gallery-row .image-container .gallery__image {
+      max-height: 35rem;
+      margin: 2rem;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
+
+.section__about-us {
+  height: 100%;
+  color: #545353; }
+  .section__about-us .about-us__box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 5rem;
+    border-radius: 3rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+    .section__about-us .about-us__box--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #545353;
+      padding: 3rem 2rem;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      background-color: #f6f4f1; }
+      .section__about-us .about-us__box--text .paragraph {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0 5rem;
+        line-height: 3rem; }
+    .section__about-us .about-us__box--image {
+      background-image: url(/assets/images/gallery/bbq/bbq-orders-landscape.jpeg);
+      background-size: cover;
+      background-position: right; }
+
+.section__delivery {
+  color: #545353; }
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e5f5e4;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  height: fit-content;
+  overflow: hidden; }
+  .cta__text-box {
+    padding: 5rem;
+    color: #545353; }
+  .cta__img-box {
+    background-image: linear-gradient(to right bottom, rgba(2, 136, 49, 0.35), rgba(2, 136, 49, 0.2)), url(/assets/delivery.jpg);
+    background-size: cover;
+    background-position: top; }
+
+.delivery-method {
+  margin-bottom: 2rem;
+  font-size: 2rem; }
+  .delivery-method :nth-child(2) {
+    margin-right: 3rem; }
+
+.customer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem; }
+  .customer-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+    .customer-info label {
+      margin-bottom: .3rem; }
+    .customer-info input {
+      height: 3rem;
+      padding: .5rem;
+      border: none;
+      box-shadow: inset -.1rem -.1rem .3rem #00000017; }
+      .customer-info input::placeholder {
+        color: #919191; }
+  .customer #pickup-address {
+    display: none; }
+
+.order-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: right; }
+  .order-container .order-item {
+    display: flex;
+    justify-content: end;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+    margin-right: .5rem;
+    font-size: 1.6rem; }
+    .order-container .order-item .item-price {
+      margin-right: .5rem;
+      font-weight: 100; }
+    .order-container .order-item .item-qty {
+      width: 2rem;
+      font-size: 1.6rem;
+      text-align: center;
+      background-color: transparent;
+      border: none; }
+    .order-container .order-item .plusOne, .order-container .order-item .minusOne {
+      cursor: pointer;
+      font-size: 1.3rem;
+      display: inline-block;
+      border: 0.5px solid #545353;
+      background-color: #f6f4f1;
+      padding: 0 .5rem; }
+
+.order-container .arrow {
+  display: none;
+  position: absolute;
+  top: 40%;
+  color: #028831;
+  font-size: 4rem;
+  text-shadow: 0 .2rem .3rem #00000028;
+  cursor: pointer;
+  transition: all .2s ease-out; }
+  .order-container .arrow:active {
+    transform: translateY(0.2rem) scale(0.9); }
+  .order-container .arrow-left {
+    left: 0; }
+  .order-container .arrow-right {
+    left: 100%; }
+
+.total-price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-transform: uppercase; }
+  .total-price-container #total-price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+
+#place-order-btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #028831;
+  color: #f6f4f1;
+  transition: all .2s; }
+  #place-order-btn:hover {
+    background-color: #04a83d;
+    transform: translateY(-0.2rem); }
+
+.footer {
+  background-color: #545353;
+  display: flex;
+  justify-content: center; }
+  .footer .footer-container {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: space-around;
+    color: #f6f4f1;
+    padding: 5rem; }
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-right: 3rem; }
+  .footer-heading {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem; }
+  .footer-item {
+    margin-bottom: 1rem;
+    color: #afafaf;
+    transition: all .2s; }
+    .footer-item:hover {
+      color: #fff; }
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch; }
+    .footer__form > * {
+      width: 80%;
+      margin: .3rem auto; }
+    .footer__form-btn {
+      width: 50%;
+      max-width: 50%;
+      padding: .5rem; }
+  .footer #footer-message {
+    padding: 1rem;
+    border-radius: .3rem;
+    resize: none; }
+  .footer__social-media {
+    margin-top: 1rem; }
+    .footer__social-media-text {
+      color: #afafaf; }
+    .footer__social-media-link {
+      display: inline-block; }
+      .footer__social-media-link:not(:last-of-type) {
+        margin-right: 1rem; }
+    .footer__social-media-icon {
+      display: block;
+      font-size: 3rem;
+      color: #afafaf;
+      transition: all .3s; }
+      .footer__social-media-icon:hover {
+        transform: translateY(-0.5rem) scale(1.2);
+        color: #fff; }
+  .footer #copyright {
+    margin-top: 2rem;
+    color: #f6f4f1; }
+
+.header {
+  height: 100%;
+  padding: 0 3rem;
+  position: relative; }
+  .header .ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em; }
+  .header .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden; }
+  .header .ml6 .letter {
+    display: inline-block;
+    line-height: 1em; }
+  .header__textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 10% 15%;
+    padding-bottom: 20%;
+    clip-path: polygon(0 0%, 100% 0%, 100% 70%, 0 100%);
+    text-align: center;
+    background-image: linear-gradient(to top right, rgba(1, 57, 18, 0.9), rgba(121, 72, 4, 0.8)), url(/assets/images/gallery/bbq/bbq-orders.jpeg);
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover; }
+    .header__textbox .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff; }
+      .header__textbox .hero--main {
+        display: inline-block;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: moveInBottom 1s ease-in-out;
+        animation-fill-mode: backwards; }
+      .header__textbox .hero--sub {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 400;
+        width: 70%;
+        margin: 0 auto 3rem;
+        animation: moveInBottom 1s ease-in-out 2s;
+        animation-fill-mode: backwards; }
+    .header__textbox .header__cta-box {
+      display: flex;
+      justify-content: center; }
+  .header .social-media {
+    position: absolute;
+    bottom: 10%;
+    right: 10%; }
+    .header .social-media-link {
+      display: inline-block; }
+      .header .social-media-link:not(:last-of-type) {
+        margin-right: 1rem; }
+    .header .social-media-icon {
+      display: block;
+      font-size: 3rem;
+      color: #545353;
+      transition: all .3s; }
+      .header .social-media-icon:hover {
+        transform: translateY(-0.5rem) scale(1.2); }
+    .header .social-media-text {
+      margin-top: 1rem;
+      letter-spacing: .2rem;
+      color: #028831;
+      text-align: center; }
+
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(246, 244, 241, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  height: 8rem;
+  padding: 0 10%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+  z-index: 9; }
+  .navigation__logo {
+    position: absolute;
+    top: .5rem;
+    left: rem;
+    height: 12rem; }
+  .navigation__hamburger {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 10%;
+    z-index: 1000;
+    padding: .3rem; }
+    .navigation__hamburger span {
+      display: block;
+      height: 5px;
+      width: 35px;
+      margin-bottom: 5px;
+      background-color: #028831;
+      border-radius: 10px;
+      box-shadow: 0 .2rem .3rem #0000000c;
+      transition: all .3s ease-in-out; }
+    .navigation__hamburger #span1.open {
+      transform: rotate(405deg) translateY(1.7rem); }
+    .navigation__hamburger #span2.open {
+      transform: translateX(5rem);
+      opacity: 0; }
+    .navigation__hamburger #span3.open {
+      transform: rotate(-405deg) translateY(-1.7rem); }
+  .navigation__list {
+    display: flex;
+    margin-top: 1.5rem; }
+    .navigation__list .navigation__item {
+      display: block;
+      margin-right: 3rem;
+      padding: .8rem 1.5rem;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #028831;
+      border-radius: .5rem;
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+      transition: all .3s; }
+      .navigation__list .navigation__item:hover {
+        background-color: #f8e55c;
+        color: #583c3c;
+        transform: translateY(-0.5rem) scale(1.1);
+        box-shadow: 0 0.7rem 0.8rem rgba(0, 0, 0, 0.2); }
+
+.sticky .navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+
+.sticky .header {
+  margin-top: 8rem; }
+
+.btn {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.5rem 1.5rem;
+  margin-right: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn-ghost {
+  border: 2px solid #f8e55c;
+  transition: all .3s; }
+  .btn-ghost:hover {
+    background-color: #f8e55c;
+    color: #583c3c;
+    transform: translateY(-0.5rem) scale(1.1);
+    box-shadow: 0 0.5rem rem rgba(0, 0, 0, 0.1); }
+
+.btn-solid {
+  background-color: #f8e55c;
+  color: #583c3c;
+  transition: all .3s; }
+  .btn-solid:hover {
+    transform: translateY(-0.5rem) scale(1.1);
+    box-shadow: 0 0.5rem rem rgba(0, 0, 0, 0.1); }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 10rem; }
+
+@media (max-width: 1140px) {
+  html {
+    font-size: 60%; }
+  .container {
+    max-width: 90%; } }
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%; } }
+
+@media (min-width: 950px) and (max-width: 1023px) {
+  .header__textbox .hero--main span {
+    display: block; }
+  .header__textbox .hero--sub {
+    font-size: 2.5rem; } }
+
+@media (max-width: 949px) {
+  section {
+    margin-bottom: 10rem; }
+  .navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all .3s ease-out .5s; }
+    .navigation.open {
+      height: 80vh;
+      transition: all .2s ease-in; }
+    .navigation__nav {
+      width: 100%; }
+    .navigation__list {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      opacity: 1;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .2s ease-in;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content; }
+      .navigation__list .navigation__item {
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 2.5rem;
+        margin-right: 0;
+        text-align: center;
+        font-size: 2.5rem;
+        transform: translateX(50rem);
+        opacity: 0;
+        transition: all .3s ease-in-out; }
+        .navigation__list .navigation__item.items-open {
+          opacity: 1;
+          transform: translateX(0rem); }
+    .navigation__hamburger {
+      display: block; }
+  .header__textbox {
+    margin-top: 8rem; }
+    .header__textbox .hero--main {
+      font-size: 4rem; }
+    .header__textbox .hero--sub {
+      width: 100%;
+      font-size: 2rem; }
+  .btn {
+    padding: 1rem;
+    font-size: 1.5rem; }
+  .cta, .section__about-us .about-us__box {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    overflow: hidden; }
+  .cta__img-box {
+    width: 114rem;
+    height: 25rem;
+    background-image: linear-gradient(to right bottom, rgba(2, 136, 49, 0.35), rgba(2, 136, 49, 0.2)), url(/assets/delivery-landscape.jpg); }
+  .section__about-us .about-us__box--image {
+    width: 114rem;
+    height: 25rem;
+    background-size: cover; }
+  .order-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-right: 2.5rem; }
+    .order-container .order-item {
+      font-size: 1.8rem; }
+  .total-price-container {
+    margin-right: 2.5rem; } }
+
+@media (max-width: 700px) {
+  .navigation__logo {
+    height: 9rem;
+    left: 5rem; }
+  .header__textbox {
+    -webkit-clip-path: none;
+    clip-path: none; }
+  .header .social-media-icon, .header .social-media-text {
+    color: #e5f5e4; }
+  .cta__img-box {
+    background-image: linear-gradient(to right bottom, rgba(2, 136, 49, 0.35), rgba(2, 136, 49, 0.2)), url(/assets/delivery-small.jpg);
+    background-size: 65%;
+    background-position: top left; } }
+
+@media (max-width: 480px) {
+  .header .social-media {
+    display: none; }
+  .section-gallery .heading__subtitle {
+    font-size: 2rem; }
+  .section-gallery .image-container {
+    margin-bottom: 2rem; }
+    .section-gallery .image-container .gallery__image {
+      max-height: 30rem;
+      margin: 1.5rem; }
+  .customer {
+    grid-template-columns: 1fr; }
+  .order-container {
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    .order-container .order-group-2 {
+      display: none; }
+    .order-container .arrow-right {
+      display: block; }
+  .menu-item {
+    margin: 1rem 0.5rem;
+    padding: .5rem;
+    width: 11rem;
+    overflow: hidden; }
+    .menu-item .menu-item__image {
+      height: 11rem;
+      width: 11rem;
+      margin-bottom: 1rem;
+      border-radius: 0; }
+  .footer-container {
+    flex-direction: column; }
+  .footer__link-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .5rem; }
+  .footer__social-media {
+    margin-bottom: 1rem; } }
