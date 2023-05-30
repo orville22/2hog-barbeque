@@ -4,6 +4,10 @@ const email = document.getElementById('customer-email');
 const mobile = document.getElementById('customer-mobile');
 const address = document.getElementById('customer-address');
 
+if(name.value.length < 1 ) {
+  console.log('invalid name')
+}
+
 ///////////////////////////////////////////
 
 const items = document.querySelectorAll('.order-item');
