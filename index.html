@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Indulge in the nostalgic flavors of our authentic street barbeque at 2hog Barbeque in Sta. Ana, Sto. Tomas, Batangas. Experience the taste of your childhood, made even better with our unwavering commitment to cleanliness and exceptional food preparation. Discover the finest barbeque that will leave you craving for more. Visit us today!">
+
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>2Hog Barbeque</title>
+</head>
+<body>
+    <div id="home" class="navigation">
+        <a href="#home"><img class="navigation__logo" src="assets/logo.png" alt="2hog logo"></a>
+
+        <div id="hamburger" class="navigation__hamburger">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+        </div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li><a href="#home" class="navigation__item">Home</a></li>
+                <li><a href="#menu" class="navigation__item">Menu</a></li>
+                <li><a href="#gallery" class="navigation__item">Gallery</a></li>
+                <li><a href="#aboutus" class="navigation__item">About Us</a></li>
+                <li><a href="#delivery" class="navigation__item">Delivery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div class="header__textbox">
+            <h1 class="hero">
+                <span class=" hero--main">
+                    <span>Sa lasang sulit,</span>
+                    <span>ika'y mapapaulit!</span>
+                </span> 
+
+                <span class="hero--sub u-margin-bottom-med">Come and try the best barbeque in town. It will surely leave you craving for more...Well, the tagline says it all.</span>
+            </h1>
+            <div class="header__cta-box">
+                <a href="#orderhere" class="btn btn-solid">Order Now</a>
+                <a href="#menu" class="btn btn-ghost">Our Menu</a>
+            </div>
+        </div>
+        
+        <div class="social-media">
+            <a class="social-media-link" href="#"><i class="social-media-icon ph ph-facebook-logo" alt="facebook-icon"></i></a>
+            <a class="social-media-link" href="#"><i class="social-media-icon ph ph-instagram-logo" alt="instagram-icon"></i></a>
+            <a class="social-media-link" href="#"><i class="social-media-icon ph ph-twitter-logo" alt="twitter-icon"></i></a>
+            <a class="social-media-link" href="#"><i class="social-media-icon ph ph-tiktok-logo" alt="tiktok-icon"></i></a>
+            <h4 class="social-media-text">Follow Us</h4>
+        </div>
+    </header>
+
+    <section id="menu" class="section__menu container">
+
+        <h1 class="heading__primary u-dotted-line">Menu</h1>
+
+        <!-- GRILL -->
+        <div class="category u-margin-bottom-med">
+            <div class="category__title">
+                <h2 class="heading__secondary category__title--text">Grill<i class="category__title--icon ph ph-fork-knife" alt="cook-icon"></i></h2>
+                <p class="category__title--subtitle">This is our specialty! The street foods you grew up with...only better.</p>
+            </div>
+            <div class="category__container">
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/pork_bbq.jpeg" alt="pork barbeque">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Pork Barbeque</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/hotdog.jpg" alt="hotdog">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Hotdog</span>
+                        <span class="menu-item__text--price">&#8369 22</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw-manok.jpg" alt="isaw manok">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Isaw Manok</span>
+                        <span class="menu-item__text--price">&#8369 12</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw-baboy.jpg" alt="isaw baboy">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Isaw Baboy</span>
+                        <span class="menu-item__text--price">&#8369 15</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw-baboy.jpg" alt="isaw baboy bilog">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Isaw Baboy (Bilog)</span>
+                        <span class="menu-item__text--price">&#8369 20</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/leeg.jpg" alt="leeg">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Leeg</span>
+                        <span class="menu-item__text--price">&#8369 35</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/adidas.jpg" alt="adidas">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Paa (Adidas)</span>
+                        <span class="menu-item__text--price">&#8369 18</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/betamax.jpg" alt="betamax">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Dugo (Betamax)</span>
+                        <span class="menu-item__text--price">&#8369 12</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/chicharong-bulaklak.jpeg" alt="chicharong bulaklak">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Chicharong Bulaklak</span>
+                        <span class="menu-item__text--price">&#8369 19</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/tenga.jpg" alt="isaw">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Tenga</span>
+                        <span class="menu-item__text--price">&#8369 23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FRIED -->
+        <div class="category u-margin-bottom-med">
+            <div class="category__title">
+                <h2 class="heading__secondary category__title--text">Fried<i class="category__title--icon ph ph-cooking-pot" alt="fries icon"></i></h2>
+                <p class="category__title--subtitle">Crunchy or crispy? Dip or no dip? Whichever it is, you can never go wrong with them. They are all good...especially as "pulutan".</p>
+            </div>
+            <div class="category__container">
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/pork_bbq.jpeg" alt="French Fries">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">French Fries</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="Fishball">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Fishball</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="Squidball">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Squidball</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="Kikiam">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Kikiam</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="Siomai">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Siomai</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="Dumpling">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Dumpling</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="Cheese Sticks">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Cheese Sticks</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="category u-margin-bottom-med">
+            <div class="category__title">
+                <h2 class="heading__secondary category__title--text">Drinks<i class="category__title--icon ph ph-wine" alt="drinks icon"></i></h2>
+                <p class="category__title--subtitle">You know what's the perfect pair with barbeque? That's right...an ice-cold drink!</p>
+            </div>
+            <div class="category__container">
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/pork_bbq.jpeg" alt="pork barbeque">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Pork Barbeque</span>
+                        <span class="menu-item__text--price">&#8369 25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="isaw">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Hotdog</span>
+                        <span class="menu-item__text--price">&#8369 22</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="isaw">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Isaw Manok</span>
+                        <span class="menu-item__text--price">&#8369 12</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="isaw">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Isaw Baboy</span>
+                        <span class="menu-item__text--price">&#8369 15</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="isaw">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Isaw Baboy (Bilog)</span>
+                        <span class="menu-item__text--price">&#8369 20</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="isaw">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Leeg</span>
+                        <span class="menu-item__text--price">&#8369 35</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item__image" src="/assets/images/menu/isaw.jpeg" alt="isaw">
+                    <div class="menu-item__text">
+                        <span class="menu-item__text--name">Isaw Manok</span>
+                        <span class="menu-item__text--price">&#8369 12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-gallery">
+        <h1 class="heading__primary">Gallery</h1>
+        <p class="heading__subtitle">Be one of the many faces of 2hog satisfaction.</p>
+
+        <div class="gallery-container">
+            <div class= "gallery-row gallery-row--1">
+            </div>
+    
+            <div class= "gallery-row gallery-row--2">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="aboutus" class="section__about-us container">
+
+        <h1 class="heading__primary">About Us</h1>
+        
+        <div class="about-us__box container">
+            <div class="about-us__box--image"></div>
+            <div class="about-us__box--text">
+                <h2 class="heading__secondary">Our Story</h2>
+                <p class="paragraph">
+                    We started 2hog Barbeque in 2020 out of a passion for delivering unparalleled Filipino street food experiences, where cleanliness is our utmost priority. Like all street food stalls, we also humbly began our journey on the streetside, inspired by the vibrant atmosphere and the opportunity to share our passion for the flavors we grew up with. As we witnessed the enthusiasm and joy our dishes brought to customers, we realized the immense potential to create a remarkable dining experience that embodies the essence of Filipino street food culture.
+                </p>
+                    
+                <p class="paragraph">
+                    We wanted you to enjoy the authentic "isaw", "adidas", "betamax", etc. without any concerns because, at 2hog, we meticulously ensure the highest standards of hygiene and quality for your complete satisfaction.
+                </p>
+
+                <p class="paragraph">
+                    By the way, for those who are unfamiliar, the term "2hog" or "Tuhog" refers to the art of skewering or the method of placing meat on a stick. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__delivery" id="delivery">
+        <h1 class="heading__primary">Online Order</h1>
+        <div class="container cta">
+            <div class="cta__text-box">
+                <form action="#" method="post">
+                    <div class="delivery-method">
+                        <input type="radio" name="delivery-type" id="delivery-radio" value="delivery">
+                        <label for="delivery-radio">Delivery</label>
+                        <input type="radio" name="delivery-type" id="pickup-radio" value="pickup">
+                        <label class="delivery-method-text" for="pickup-radio">Pickup</label>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-info">
+                            <label for="customer-name">Name</label>
+                            <input type="text" name="customer-name" id="customer-name" placeholder="Full Name">
+                        </div>
+                        <div class="customer-info">
+                            <label for="customer-mobile">Mobile Number</label>
+                            <input type="tel" name="customer-mobile" id="customer-mobile" placeholder="Enter mobile number">
+                        </div>
+                        <div class="customer-info">
+                            <label for="email">Email: </label>
+                            <input type="email" name="customer-email" id="customer-email" placeholder="example@2hog.com">
+                        </div>
+                        <div class="customer-info">
+                            <label for="customer-address">Delivery Address</label>
+                            <input type="text" name="customer-address" id="customer-address" placeholder="Enter delivery address">
+                        </div>
+                        <div class="customer-info" id="pickup-address">
+                            <span>Pick-up Address: <br>2hog Barbeque - Sta. Ana, Sto. Tomas, Batangas</span>
+                        </div>
+                    </div>
+                    <div class="order-container">
+                        <span class="arrow arrow-left"><i class="ph ph-arrow-left"></i></span>
+                        <span class="arrow arrow-right"><i class="ph ph-arrow-right"></i></span>
+                        <div class="order-group-1">
+                            <div class="order-item">
+                                <label for="item1">Pork BBQ ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Hotdog ...</label>
+                                <span class="item-price">&#8369;22.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Tenga ...</label>
+                                <span class="item-price">&#8369;23.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Maskara ...</label>
+                                <span class="item-price">&#8369;23.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Baboy-bilog  ...</label>
+                                <span class="item-price">&#8369;20.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Leeg ...</label>
+                                <span class="item-price">&#8369;35.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Chi.Bulaklak ...</label>
+                                <span class="item-price">&#8369;19.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Paa ...</label>
+                                <span class="item-price">&#8369;18.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Isaw Baboy ...</label>
+                                <span class="item-price">&#8369;23.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Dugo ...</label>
+                                <span class="item-price">&#8369;12.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                            
+                            <div class="order-item">
+                                <label for="item1">Isaw Manok ...</label>
+                                <span class="item-price">&#8369;12.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                        </div>
+                            
+                        <div class="order-group-2">
+                            <div class="order-item">
+                                <label for="item1">French Fries ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+
+                            <div class="order-item">
+                                <label for="item1">Fishball ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+    
+                            <div class="order-item">
+                                <label for="item1">Squidball ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+
+                            <div class="order-item">
+                                <label for="item1">Kikiam ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+    
+                            <div class="order-item">
+                                <label for="item1">Siomai ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+
+                            <div class="order-item">
+                                <label for="item1">Dumplings ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+
+                            <div class="order-item">
+                                <label for="item1">Cheese Sticks ...</label>
+                                <span class="item-price">&#8369;25.00</span>
+                                <span class="minusOne">-</span>
+                                <input class="item-qty" type="text" name="item1" id="item1" min="0" max="100" value="0" disabled>
+                                <span class="plusOne">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-price-container">
+                        <label for="totalPrice">Total</label>
+                        <span id="total-price">&#8369 0.00</span>
+                        <button id="place-order-btn" type="submit">Place Order</button>
+                    </div>
+                </form>
+            </div>
+            <div class="cta__img-box"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer__column">
+                <h3 class="footer-heading">Useful Links</h3>
+                <ul class="footer__link-list">
+                    <li class="footer__link-item"><a class="footer-item" href="#home">Home</a></li>
+                    <li class="footer__link-item"><a class="footer-item" href="#menu">Menu</a></li>
+                    <li class="footer__link-item"><a class="footer-item" href="#delivery">Delivery</a></li>
+                </ul>
+                <div class="footer__social-media">
+                    <a class="footer__social-media-link" href="#"><i class="footer__social-media-icon ph ph-facebook-logo" alt="facebook-icon"></i></a>
+                    <a class="footer__social-media-link" href="#"><i class="footer__social-media-icon ph ph-instagram-logo" alt="instagram-icon"></i></a>
+                    <a class="footer__social-media-link" href="#"><i class="footer__social-media-icon ph ph-twitter-logo" alt="twitter-icon"></i></a>
+                    <a class="footer__social-media-link" href="#"><i class="footer__social-media-icon ph ph-tiktok-logo" alt="tiktok-icon"></i></a>
+                    <h4 class="footer__social-media-text">Follow Us</h4>
+                </div>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer-heading">Send Us A Message</h3>
+                <form class="footer__form" action="#" method="post">
+                    <textarea name="footer-message" id="footer-message" rows="5" placeholder="Send us a message..." maxlength="200"></textarea>
+                    <input type="email" name="footer-email-input" id="footer-email-input" placeholder="Enter your email">
+                    <button class="footer__form-btn" type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer-heading">Contact</h3>
+                <a class="footer-item" href="tel:+639456792566">0945 679 2566</a>
+                <a class="footer-item" href="https://www.google.com/maps/place/2HOG+Barbeque/@14.0623237,121.1938602,17z/data=!4m14!1m7!3m6!1s0x33bd690335793ab9:0x8060086dd4ad8110!2s2HOG+Barbeque!8m2!3d14.0623185!4d121.1964351!16s%2Fg%2F11st1b08dk!3m5!1s0x33bd690335793ab9:0x8060086dd4ad8110!8m2!3d14.0623185!4d121.1964351!16s%2Fg%2F11st1b08dk" target="_blank">2Hog Barbeque,<br> Sta. Ana, Sto. Tomas, Batangas</a>
+                <p id="copyright">&copy; <span id="copyright-year"></span> 2Hog Barbeque<br> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="orderform.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+.btn {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $color-white;
+    padding: 1.5rem 1.5rem;
+    margin-right: 2rem;
+    border-radius: 3px;
+
+    @include drop-shadow
+}
+
+.btn-ghost {
+    border: 2px solid $color-medium-yellow;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $color-medium-yellow;
+        color: $color-brown-dark;
+        transform: translateY(-.5rem) scale(1.1);
+
+        @include drop-shadow-up
+    }
+}
+
+.btn-solid {
+    background-color: $color-medium-yellow;
+    color: $color-brown-dark;
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-.5rem) scale(1.1);
+
+        @include drop-shadow-up
+    }
+}

@@ -1,0 +1,110 @@
+.header {
+    height: 100%;
+    padding: 0 3rem;
+    position: relative;
+
+    //Animated h1
+    .ml6 {
+        position: relative;
+        font-weight: 900;
+        font-size: 3.3em;
+      }     
+      .ml6 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.2em;
+        padding-right: 0.05em;
+        padding-bottom: 0.1em;
+        overflow: hidden;
+      }     
+      .ml6 .letter {
+        display: inline-block;
+        line-height: 1em;
+      }
+
+    &__textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        padding: 10% 15%;
+        padding-bottom: 20%;
+        clip-path: polygon(0 0%, 100% 0%, 100% 70%, 0 100%);
+        text-align: center;
+
+        background-image:
+        linear-gradient(to top right, rgba(1, 57, 18, 0.9), rgba(121, 72, 4, 0.8)), url(/assets/images/gallery/bbq/bbq-orders.jpeg);
+        background-blend-mode: multiply;
+        background-size: contain;
+        background-position: top;
+        background-attachment: fixed;
+        background-size: cover;
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $color-white;
+
+            &--main {
+                display: inline-block;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                font-size: 6rem;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                animation: moveInBottom 1s ease-in-out;
+                animation-fill-mode: backwards;
+                
+            }
+            &--sub {
+                display: inline-block;
+                font-size: 3rem;
+                font-weight: 400;
+                width: 70%;
+                margin: 0 auto 3rem;
+
+                animation: moveInBottom 1s ease-in-out 2s;
+                animation-fill-mode: backwards;
+            }
+        }
+
+        .header__cta-box {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .social-media {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+
+        &-link {
+            display: inline-block;
+
+            &:not(:last-of-type) {
+                margin-right: 1rem;
+            }
+        }
+
+        &-icon {
+            display: block;
+            font-size: 3rem;
+            color: $color-grey-dark;
+            transition: all .3s;
+
+            &:hover {
+                transform: translateY(-.5rem) scale(1.2);
+            }
+        }
+
+        &-text {
+            margin-top: 1rem;
+            letter-spacing: .2rem;
+            color: $color-green-dark;
+            text-align: center;
+        }
+    }
+}
