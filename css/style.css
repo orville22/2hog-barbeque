@@ -152,8 +152,10 @@ section {
   margin: 1.2rem;
   background-color: rgba(246, 244, 241, 0.5);
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   transition: all .3s ease-in-out; }
   .menu-item:hover {
+    z-index: 99999;
     transform: scale(1.7) rotate(-3deg); }
   .menu-item__image {
     height: 12rem;

@@ -58,9 +58,11 @@
     margin: 1.2rem;
     background-color: rgba($color-grey-light, $alpha: .5);
     box-shadow: 0 .2rem 1rem rgba($color: #000000, $alpha: .1);
+    backdrop-filter: blur(5px);
     transition: all .3s ease-in-out;
-
+    
     &:hover {
+        z-index: 99999;
         transform: scale(1.7) rotate(-3deg);
     }
 
