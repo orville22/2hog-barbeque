@@ -1,10 +1,12 @@
 //FORM VALIDATION
-const name = document.getElementById('customer-name');
-const email = document.getElementById('customer-email');
-const mobile = document.getElementById('customer-mobile');
-const address = document.getElementById('customer-address');
+const customerName = document.getElementById('customer-name');
+const customerEmail = document.getElementById('customer-email');
+const customerMobile = document.getElementById('customer-mobile');
+const customerAddress = document.getElementById('customer-address');
+const submitBtn = document.getElementById('place-order-btn');
 
-if(name.value.length < 1 ) {
+submitBtn.addEventListener('submit', )
+if(customerName.value.length < 1 ) {
   console.log('invalid name')
 }
 
