@@ -310,7 +310,7 @@
         <h1 class="heading__primary">Online Order</h1>
         <div class="container cta">
             <div class="cta__text-box">
-                <form action="#" method="post">
+                <form id="order-form" action="#" method="post">
                     <div class="delivery-method">
                         <input type="radio" name="delivery-type" id="delivery-radio" value="delivery">
                         <label for="delivery-radio">Delivery</label>
@@ -327,7 +327,7 @@
                             <input type="tel" name="customer-mobile" id="customer-mobile" placeholder="Enter mobile number">
                         </div>
                         <div class="customer-info">
-                            <label for="email">Email: </label>
+                            <label for="customer-email">Email: </label>
                             <input type="email" name="customer-email" id="customer-email" placeholder="example@2hog.com">
                         </div>
                         <div class="customer-info">
@@ -490,7 +490,7 @@
                         </div>
                     </div>
                     <div class="total-price-container">
-                        <label for="totalPrice">Total</label>
+                        <span for="total-price">Total</span>
                         <span id="total-price">&#8369 0.00</span>
                         <button id="place-order-btn" type="submit">Place Order</button>
                     </div>
