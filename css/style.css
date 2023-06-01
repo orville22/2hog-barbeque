@@ -344,6 +344,9 @@ section {
     background-color: #04a83d;
     transform: translateY(-0.2rem); }
 
+.error-container {
+  color: red; }
+
 .footer {
   background-color: #545353;
   display: flex;

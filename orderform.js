@@ -1,14 +1,67 @@
 //FORM VALIDATION
-const customerName = document.getElementById('customer-name');
-const customerEmail = document.getElementById('customer-email');
-const customerMobile = document.getElementById('customer-mobile');
-const customerAddress = document.getElementById('customer-address');
-const submitBtn = document.getElementById('place-order-btn');
+const orderForm = document.getElementById('order-form');
 
-submitBtn.addEventListener('submit', )
-if(customerName.value.length < 1 ) {
-  console.log('invalid name')
-}
+orderForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('customer-name');
+  const email = document.getElementById('customer-email');
+  const mobile = document.getElementById('customer-mobile');
+  const address = document.getElementById('customer-address');
+  const customer = document.querySelector('.customer');
+  const totalPrice = parseInt(document.querySelector('#total-price').textContent.slice(1));
+
+  //form error reset
+  const errorMessages = orderForm.querySelectorAll('.error-container');
+  errorMessages.forEach((errorMessage) => {
+      errorMessage.remove();
+  })
+  ////
+
+  //Checks if ORDER is present
+  if(totalPrice == 0) {
+    const noOrderMessage = document.createElement('p');
+    noOrderMessage.className = 'error-container';
+    noOrderMessage.innerHTML = 'No order to process. Add an item.'
+    orderForm.appendChild(noOrderMessage);
+    console.log(totalPrice)
+  }
+
+  //validates customer info
+  const validateField = function(element, fieldName) {
+    element.style.border = "none";
+
+    if(element.value === '') {
+      let errorContainer = document.createElement('p');
+      let errorMessage = `Please enter your ${fieldName}`;
+
+      errorContainer.className = 'error-container';
+      errorContainer.textContent = errorMessage;
+      customer.append(errorContainer);
+      element.style.border = '2px solid red';
+
+    }else if(element === mobile) { //mobile number validation
+      const regex = /^(\+?63|0)9\d{9}$/;
+      const formattedMobile = element.value.replace(/\s/g, "");
+      if(!regex.test(formattedMobile)) {
+        mobile.value = '';
+        let errorContainer = document.createElement('p');
+        let errorMessage = 'Please enter a valid mobile number.'
+        errorContainer.className = 'error-container';
+        errorContainer.textContent = errorMessage;
+        customer.append(errorContainer);
+        mobile.style.border = '2px solid red';
+      }
+      console.log(formattedMobile)
+    }
+  }
+
+  validateField(name, 'name');
+  validateField(email, 'email');
+  validateField(mobile, 'mobile number');
+  validateField(address, 'address');
+})
+
 
 ///////////////////////////////////////////
 
