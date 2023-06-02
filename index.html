@@ -312,7 +312,7 @@
             <div class="cta__text-box">
                 <form id="order-form" action="#" method="post">
                     <div class="delivery-method">
-                        <input type="radio" name="delivery-type" id="delivery-radio" value="delivery">
+                        <input type="radio" name="delivery-type" id="delivery-radio" value="delivery" checked>
                         <label for="delivery-radio">Delivery</label>
                         <input type="radio" name="delivery-type" id="pickup-radio" value="pickup">
                         <label class="delivery-method-text" for="pickup-radio">Pickup</label>
@@ -330,7 +330,7 @@
                             <label for="customer-email">Email: </label>
                             <input type="email" name="customer-email" id="customer-email" placeholder="example@2hog.com">
                         </div>
-                        <div class="customer-info">
+                        <div class="customer-info" id="delivery-address">
                             <label for="customer-address">Delivery Address</label>
                             <input type="text" name="customer-address" id="customer-address" placeholder="Enter delivery address">
                         </div>
