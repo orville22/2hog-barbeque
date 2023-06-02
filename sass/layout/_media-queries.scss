@@ -55,16 +55,22 @@
             position: absolute;
             top: 25%;
             left: 50%;
-            transform: translateX(-50%);
-            width: 80%;
-            opacity: 1;
-            overflow: hidden;
+            transform: translateX(-50%) translateY(-100%);
             flex-direction: column;
             justify-content: center;
-            transition: all .2s ease-in;
-            height: -webkit-fit-content;
-            height: -moz-fit-content;
-            height: fit-content;
+            width: 80%;
+            // background-color: aqua;
+            transition: all .3s ease-out .5s;
+
+            &.open {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+                overflow: hidden;
+                height: -webkit-fit-content;
+                height: -moz-fit-content;
+                height: fit-content;
+                transition: all .2s ease-in;
+            }
 
             & .navigation__item {
                 width: 100%;

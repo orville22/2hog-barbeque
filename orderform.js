@@ -1,3 +1,22 @@
+//DELIVERY type selection--If a delivery is selected, display address. else display pickup location
+const deliveryType = document.getElementsByName('delivery-type');
+const deliveryAddress = document.getElementById('delivery-address');
+const pickupAddress = document.getElementById('pickup-address');
+
+deliveryType.forEach((type)=> {
+  type.addEventListener('change', ()=> {
+    let selected = type.value;
+    if(selected == 'delivery') {
+      deliveryAddress.style.display = 'flex';
+      pickupAddress.style.display = 'none';
+    }
+    if(selected == 'pickup'){
+      deliveryAddress.style.display = 'none';
+      pickupAddress.style.display = 'block';
+    }
+  })
+})
+
 //FORM VALIDATION
 const orderForm = document.getElementById('order-form');
 
@@ -11,7 +30,7 @@ orderForm.addEventListener('submit', (e) => {
   const customer = document.querySelector('.customer');
   const totalPrice = parseInt(document.querySelector('#total-price').textContent.slice(1));
 
-  //form error reset
+  //Remove/reset all error messages
   const errorMessages = orderForm.querySelectorAll('.error-container');
   errorMessages.forEach((errorMessage) => {
       errorMessage.remove();

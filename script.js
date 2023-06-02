@@ -76,12 +76,15 @@ function toggleClassDelay(el, classList) {
 }
 
 function toggleHamburger() {
+    const navList = document.querySelector('.navigation__list');
     const spans = document.querySelectorAll("#span1, #span2, #span3");
     const navParent = document.querySelector(".navigation");
     spans.forEach((span) => {
         span.classList.toggle("open");
     });
     navParent.classList.toggle("open");
+    navList.classList.toggle("open");
+
 }
 
 hamburger.addEventListener("click", () => {
