@@ -50,7 +50,7 @@ orderForm.addEventListener('submit', (e) => {
   const validateField = function(element, fieldName) {
     element.style.border = "none";
 
-    if(element.value === '') {
+    if(element.value === '' && deliveryAddress.style.display !== 'none') {
       let errorContainer = document.createElement('p');
       let errorMessage = `Please enter your ${fieldName}`;
 
@@ -70,6 +70,7 @@ orderForm.addEventListener('submit', (e) => {
         errorContainer.textContent = errorMessage;
         customer.append(errorContainer);
         mobile.style.border = '2px solid red';
+
       }
       console.log(formattedMobile)
     }
@@ -83,6 +84,7 @@ orderForm.addEventListener('submit', (e) => {
 
 
 ///////////////////////////////////////////
+//UDATING ORDER QTY
 
 const items = document.querySelectorAll('.order-item');
 const plusButtons = document.querySelectorAll(".plusOne");
@@ -138,6 +140,7 @@ items.forEach((item) => {
   prices.push(price);
 });
 
+///////////////////////
 
 //Online order arrows and group visibility
 const arrowLeft = document.querySelector(".arrow-left");
@@ -184,3 +187,5 @@ function updateOrderGroupVisibility() {
 }
 
 window.addEventListener("resize", updateOrderGroupVisibility);
+
+////////////////
