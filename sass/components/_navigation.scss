@@ -1,92 +1,89 @@
 .navigation {
-    position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-grey-light;
+  height: 8rem;
+  padding: 0 10%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+  z-index: 9;
+
+  &__logo {
+    position: absolute;
+    top: 0.5rem;
+    left: rem;
+    height: 12rem;
+  }
+
+  &__hamburger {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 10%;
+    z-index: 1000;
+    padding: 0.3rem;
+
+    & span {
+      display: block;
+      height: 5px;
+      width: 35px;
+      margin-bottom: 5px;
+      background-color: $color-green-dark;
+      border-radius: 10px;
+      box-shadow: 0 0.2rem 0.3rem #0000000c;
+      transition: all 0.3s ease-in-out;
+    }
+
+    #span1.open {
+      transform: rotate(405deg) translateY(1.7rem);
+    }
+
+    #span2.open {
+      transform: translateX(5rem);
+      opacity: 0;
+    }
+    #span3.open {
+      transform: rotate(-405deg) translateY(-1.7rem);
+    }
+  }
+
+  &__list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba($color-grey-light, $alpha: 0.7);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    height: 8rem;
-    padding: 0 10%;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-weight: 700;
-    z-index: 9;
+    margin-top: 1.5rem;
 
-    &__logo {
-        position: absolute;
-        top: .5rem;
-        left: rem;
-        height: 12rem;
+    & .navigation__item {
+      display: block;
+      margin-right: 3rem;
+      padding: 0.8rem 1.5rem;
+      text-transform: uppercase;
+      color: $color-white;
+      background-color: $color-green-dark;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 0.5rem rgba($color-black, $alpha: 0.3);
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $color-medium-yellow;
+        color: $color-brown-dark;
+        transform: translateY(-0.5rem) scale(1.1);
+        box-shadow: 0 0.7rem 0.8rem rgba($color-black, $alpha: 0.2);
+      }
     }
-
-    &__hamburger {
-        display: none;
-        position: absolute;
-        top: 3rem;
-        right: 10%;
-        z-index: 1000;
-        padding: .3rem;
-
-        & span {
-            display: block;
-            height: 5px;
-            width: 35px;
-            margin-bottom: 5px;
-            background-color: $color-green-dark;
-            border-radius: 10px;
-            box-shadow: 0 .2rem .3rem #0000000c;
-            transition: all .3s ease-in-out;
-        }
-
-        #span1.open {
-            transform: rotate(405deg) translateY(1.7rem);
-        }
-
-        #span2.open {
-            transform: translateX(5rem);
-            opacity: 0;
-        }
-        #span3.open {
-            transform: rotate(-405deg) translateY(-1.7rem);
-        }
-    }
-
-    &__list {
-        display: flex;
-        margin-top: 1.5rem;
-        
-        & .navigation__item {
-            display: block;
-            margin-right: 3rem;
-            padding: .8rem 1.5rem;
-            text-transform: uppercase;
-            color: $color-white;
-            background-color: $color-green-dark;
-            border-radius: .5rem;
-            box-shadow: 0 .5rem .5rem rgba($color-black, $alpha: .3);
-            transition: all .3s;
-
-            &:hover {
-                background-color: $color-medium-yellow;
-                color: $color-brown-dark;
-                transform: translateY(-.5rem) scale(1.1);
-                box-shadow: 0 .7rem .8rem rgba($color-black, $alpha: .2);
-            }
-
-        }
-    }
+  }
 }
 
 .sticky .navigation {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
 
-    @include drop-shadow;
+  @include drop-shadow;
 }
 
 .sticky .header {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
